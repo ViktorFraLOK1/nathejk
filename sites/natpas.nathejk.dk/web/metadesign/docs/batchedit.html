@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SBS SWAT Batch Edit</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="../page.js"></script>
+        
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../page.css">
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../popup.css"> 
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+        
+    </head>
+                
+    <body>
+        
+        <div id="fancyboxContainer">
+            
+            <header>
+            	<h1>Batch edit</h1>
+            </header>
+            
+            <section class="fancyboxContent">
+            	
+            	<div class="uploadWrap">
+            		
+            		<!--<section class="containerList">
+            			<dl>
+            				<dt>Loaded containers</dt>
+            				<dd><a href="#">Shot through the heart <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">And you're to blame <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Darling <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">You give love <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">A bad name <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">We're halfway there <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Livin' on a prayer <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Take my hand <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">And we'll make it <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">I swear <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Livin' on a prayer <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            			</dl>
+            			<ul class="pagination">
+            				<li><a href="#">Previous</a></li>
+            				<li><a href="#">Next</a></li>
+            			</ul>
+            		</section>-->
+            		
+            		
+            		
+            		<section class="containerDetails">
+            			
+            			<div class="containerForm">
+            			
+            				<form action="#" method="post">
+	            					            				
+	            				<fieldset class="batchEdit">
+	            					<table cellspacing="0" border="0">
+	            						<thead>
+	            							<tr>
+	            								<th class="container">Container</th>
+	            								<th class="mctitle">MC Title</th>
+	            								<th class="duration">Duration</th>
+	            								<th class="dist-episode">Distributor ep. no.</th>
+	            							</tr>
+	            						</thead>
+	            						<tbody>
+	            							<tr>
+	            								<td class="container">Shot through the heart <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem01">MC Title, row 1</label>
+	            										<input type="text" class="formText" id="someItem01" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem02">Duration, row 1</label>
+	            										<input type="text" class="formText" id="someItem02" placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem03">Distributor Episode Number, row 1</label>
+	            										<input type="text" class="formText" id="someItem03" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            							<tr>
+	            								<td class="container">And you're to blame <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem02">MC Title, row 2</label>
+	            										<input type="text" class="formText" id="someItem02" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem03">Duration, row 3</label>
+	            										<input type="text" class="formText" id="someItem03"  placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem04">Distributor Episode Number, row 4</label>
+	            										<input type="text" class="formText" id="someItem04" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            							<tr>
+	            								<td class="container">Darling <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem05">MC Title, row 5</label>
+	            										<input type="text" class="formText" id="someItem05" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem06">Duration, row 6</label>
+	            										<input type="text" class="formText" id="someItem06"  placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem07">Distributor Episode Number, row 7</label>
+	            										<input type="text" class="formText" id="someItem07" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            							<tr>
+	            								<td class="container">You give love <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem01">MC Title, row 1</label>
+	            										<input type="text" class="formText" id="someItem01" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem02">Duration, row 1</label>
+	            										<input type="text" class="formText" id="someItem02" placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem03">Distributor Episode Number, row 1</label>
+	            										<input type="text" class="formText" id="someItem03" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            							<tr>
+	            								<td class="container">A bad name <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem02">MC Title, row 2</label>
+	            										<input type="text" class="formText" id="someItem02" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem03">Duration, row 3</label>
+	            										<input type="text" class="formText" id="someItem03"  placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem04">Distributor Episode Number, row 4</label>
+	            										<input type="text" class="formText" id="someItem04" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            							<tr>
+	            								<td class="container">We're halfway there <span>(127/16@Grey’s Anatomy-VII)</span></td>
+	            								<td class="mctitle">
+	            									<div class="formTextWrap">
+	            										<label for="someItem05">MC Title, row 5</label>
+	            										<input type="text" class="formText" id="someItem05" />
+	            									</div>
+	            								</td>
+	            								<td class="duration">
+	            									<div class="formTextWrap">
+	            										<label for="someItem06">Duration, row 6</label>
+	            										<input type="text" class="formText" id="someItem06"  placeholder="hh:mm:ss" />
+	            									</div>
+	            								</td>
+	            								<td class="dist-episode">
+	            									<div class="formTextWrap">
+	            										<label for="someItem07">Distributor Episode Number, row 7</label>
+	            										<input type="text" class="formText" id="someItem07" />
+	            									</div>
+	            								</td>
+	            							</tr>
+	            						</tbody>
+	            					</table>
+	            					
+	            				</fieldset>
+	            				
+	            				<fieldset class="formStandard">
+	                                <div class="formSubmitWrap">
+	                                	<input type="submit" value="Save" class="formSubmit" />
+	                                    <span class="formLink"><a href="#">Reset</a></span>
+	                                    <span class="formLink"><a href="#" class="cancelLink">Cancel</a></span>
+	                                </div>
+	                            </fieldset>
+	            			</form>
+
+            			
+            			</div>
+            			
+            			
+            			
+            			
+            		</section>
+            		
+            		
+            		
+            	</div>
+            	
+            </section>
+            
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SBS SWAT Form in Lightbox</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="../page.js"></script>
+        
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../page.css">
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../popup.css"> 
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+        
+    </head>
+                
+    <body>
+        
+        <div id="fancyboxContainer">
+            <header>
+            	<h1>Headline for this lightbox</h1>
+            </header>
+            
+            <section class="fancyboxContent">
+                <h1>Another important header of some sorts</h1>
+                
+                <div class="systemMessage">
+                    <p class="systemMessageHeader">System error: something right here</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <h2>Headline for this form field</h2>
+                <fieldset class="formStandard">
+                    <div class="formTextWrap">
+                    	<label for="f01">SWAT title</label>
+                    	<input type="text" class="formText" id="f01" />
+                    </div>
+                    <div class="formTextWrap">
+                    	<label for="f02">Original title</label>
+                    	<input type="text" class="formText" id="f02" />
+                    </div>
+                    <div class="formSelectWrap">
+                    	<label for="f03">Distributor</label>
+                    	<select id="f03" class="formSelect">
+                    		<option>Warner Brothers USA</option>
+                    		<option>Universal</option>
+                    		<option>TV5 France</option>
+                    	</select>
+                    </div>
+                    <div class="formSelectWrap">
+                        <label for="f23">Production year:</label>
+                        <select id="f23" class="formSelect">
+                            <option>2011</option>
+                            <option>2010</option>
+                            <option>2009</option>
+                            <option>2008</option>
+                            <option>2007</option>
+                        </select>
+                    </div>
+                    <div class="formSelectWrap">
+                        <label for="f43">Format:</label>
+                        <select id="f43" class="formSelect">
+                            <option>HD</option>
+                            <option>SD</option>
+                            <option>VHS</option>
+                            <option>Betamax</option>
+                            <option>Realplayer</option>
+                        </select>
+                    </div>
+                    <div class="formCheckboxWrap">
+                        <label for="f08">For web-TV:</label>
+                        <input type="checkbox" class="formCheckbox" id="f08" />
+                    </div>
+                </fieldset>
+                <fieldset class="formStandard">
+                    <div class="formSubmitWrap">
+                        <input type="submit" value="Search" class="formSubmit" />
+                        <span class="formLink"><a href="#" class="cancelLink">Cancel</a></span>
+                    </div>
+                </fieldset>
+            </section>
+            
+        </div>
+        
+    </body>
+</html>

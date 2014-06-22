@@ -1,0 +1,56 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+  var markers = {
+    'places': [
+    {
+        'name': 'fre. kl. 21:09',
+        'location': [55.5, 10.5]
+    },
+    {
+        'name': 'Lør. kl. 03:01',
+        'location': [55.38, 10.6]
+    }]
+  }
+  function initialize() {
+    var latlng = new google.maps.LatLng(55.397, 10.644);
+    var myOptions = {
+      zoom: 8,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var myLatLng = new google.maps.LatLng(55.257037,12.388029);
+    var beachMarker1 = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+    //                              icon: image
+    });
+    var    position = new google.maps.LatLng(55.315349,11.966343);
+    var beachMarker2 = new google.maps.Marker({
+        position: position,
+        map: map,
+    //                              icon: image
+    });
+    var bounds = new google.maps.LatLngBounds();
+
+{foreach from=$spot item=s}
+    position = new google.maps.LatLng({$s->location|replace:':':','});
+    new google.maps.Marker({ position: position,  map: map, icon:'icon.image.php?label={$s->teamId}'});
+    bounds.extend(position);
+{/foreach}
+
+
+    map.fitBounds(bounds);
+/*
+    mgr = new MarkerManager(map, { trackMarkers: true, maxZoom: 15});
+    google.maps.event.addListener(mgr, 'loaded', function() {
+        //mgr.addMarkers(markers.countries, 0, 5);
+        mgr.addMarkers(markers.places, 0, 11);
+        //mgr.addMarkers(markers.locations, 12);
+        mgr.refresh();
+    });*/
+  }
+</script>
+<div id="map_canvas" style="width:100%; height:100%"></div>
+<script type="text/javascript">initialize()</script>
+

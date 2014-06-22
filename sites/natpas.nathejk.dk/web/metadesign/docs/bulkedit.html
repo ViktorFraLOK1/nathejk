@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SBS SWAT Bulk Edit</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="../page.js"></script>
+        
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../page.css">
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../popup.css"> 
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+        
+    </head>
+                
+    <body>
+        
+        <div id="fancyboxContainer">
+            
+            <header>
+            	<h1>Batch edit</h1>
+            </header>
+            
+            <section class="fancyboxContent">
+            	
+            	<div class="uploadWrap bulkEdit">
+            		
+            		<section class="containerList">
+            			<dl>
+            				<dt>Loaded containers</dt>
+            				<dd><a href="#">Shot through the heart <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">And you're to blame <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Darling <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">You give love <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">A bad name <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">We're halfway there <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Livin' on a prayer <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Take my hand <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">And we'll make it <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">I swear <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            				<dd><a href="#">Livin' on a prayer <span>(127/16@Grey’s Anatomy-VII)</span></a></dd>
+            			</dl>
+            		</section>
+            		
+            		
+            		
+            		<section class="containerDetails">
+            			
+            			<div class="containerForm">
+            			
+            				<form action="#" method="post">
+	                            
+	                            
+	                            <fieldset class="formStandard">
+	                                <div class="formCheckbox pseudoHeader">
+	                                	<input type="checkbox" class="formCheckbox" id="checker" />
+	                                	<label for="checker">Dummy</label>
+	                                </div>
+	                                
+	                                <div class="column">
+	                                    
+	                                    <div class="formTextWrap">
+	                                        <label for="f11">No. of fake TR's:</label>
+	                                        <input type="text" class="formText" id="f11" value="" />
+	                                    </div>
+	                                   <div class="formSelectWrap">
+	                                        <label for="f22">Dummy format:</label>
+	                                        <select id="f22" class="formSelect">
+                                                <option>HD</option>
+                                                <option>SD</option>
+                                            </select>
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="column">
+	                                    
+	                                    <div class="formTextWrap">
+	                                        <label for="f15">Dummy AR:</label>
+	                                        <input type="text" class="formText" id="f15" value="" />
+	                                    </div>
+	                                    <div class="formSelectWrap">
+	                                        <label for="f22">Dummy Distributor:</label>
+	                                        <select id="f22" class="formSelect">
+                                                <option>Some distributor</option>
+                                                <option>Some distributor 00</option>
+                                                <option>Some distributor 01</option>
+                                                <option>Some distributor 02</option>
+                                                <option>Some distributor 03</option>
+                                            </select>
+	                                    </div>
+	                                </div>
+	                                
+	                            </fieldset>
+	                            
+	                            
+	                            <fieldset class="formStandard">
+	                                <h1>Material container</h1>
+	                                
+	                                <div class="column">
+	                                    
+	                                    <div class="formTextWrap">
+	                                        <label for="f11">Version:</label>
+	                                        <input type="text" class="formText" id="f11" value="" />
+	                                    </div>
+	                                    <div class="formTextWrap">
+	                                        <label for="f12">Distributor:</label>
+	                                        <input type="text" class="formText" id="f12" value="" />
+	                                    </div>
+	                                    <div class="formCheckboxWrap">
+	                                        <label for="f13">For web-TV:</label>
+	                                        <input type="checkbox" class="formCheckbox" id="f13" checked="checked" />
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="column">
+	                                    
+	                                    <div class="formTextWrap">
+	                                        <label for="f15">Date:</label>
+	                                        <input type="text" class="formText datePicker" id="f15" value="" />
+	                                    </div>
+	                                    <div class="formTextWrap">
+	                                        <label for="f16">Country licensee:</label>
+	                                        <input type="text" class="formText" id="f16" value="" />
+	                                    </div>
+	                                </div>
+	                                <div class="column">
+	                                    
+	                                    <div class="formTextWrap">
+	                                        <label for="f21">Version:</label>
+	                                        <input type="text" class="formText" id="f21" value="Can't fight biology (130/16@Grey's Anatomy-VII)" />
+	                                    </div>
+	                                    <div class="formSelectWrap">
+	                                        <label for="f22">Distributor:</label>
+	                                        <select id="f22" class="formSelect">
+	                                                <option>Some distributor</option>
+	                                                <option>Some distributor 00</option>
+	                                                <option>Some distributor 01</option>
+	                                                <option>Some distributor 02</option>
+	                                                <option>Some distributor 03</option>
+	                                            </select>
+	                                    </div>
+	                                    <div class="formCheckboxWrap">
+	                                        <label for="f23">For web-TV:</label>
+	                                        <input type="checkbox" class="formCheckbox" id="f23" checked="checked" />
+	                                    </div>
+	                                    <div class="formTextWrap">
+	                                        <label for="f24">Expected duration:</label>
+	                                        <input type="text" class="formText" id="f24" value="" />
+	                                    </div>
+	                                </div>
+	                             </fieldset>
+	                            
+	                            <fieldset class="formStandard">
+	                            	<h1>Special form elements</h1>
+	                            	<div class="column">
+	                                    <div class="formCheckboxWrap">
+	                                        <label for="abc">In-house del.date:</label>
+	                                        <input type="checkbox" class="formCheckbox" id="abc" checked="checked" />
+	                                        <span class="formDescription"><label for="abc">dd/mm/yyyy</label></span>
+	                                    </div>
+	                                    <fieldset class="archiveLocation">
+	                                    	<div class="formSelectWrap">
+	                                            <label for="vvv">Archive location:</label>
+	                                            <select id="vvv" class="formSelect">
+	                                                <option>Shelf</option>
+	                                                <option>00</option>
+	                                                <option>01</option>
+	                                                <option>02</option>
+	                                                <option>03</option>
+	                                            </select>
+	                                        </div>
+	                                        <div class="formSelectWrap">
+	                                            <label for="ddd">Row:</label>
+	                                            <select id="ddd" class="formSelect">
+	                                                <option>Row</option>
+	                                                <option>00</option>
+	                                                <option>01</option>
+	                                                <option>02</option>
+	                                                <option>03</option>
+	                                            </select>
+	                                        </div>
+	                                    </fieldset>
+	                                </div>
+	                                <div class="column">
+	                                    <div class="formTextWrap formTextDescription">
+	                                        <label for="abd">Postpone deadline:</label>
+	                                        <input type="text" class="formText" id="abd" />
+	                                        <span class="formDescription"><label for="abd">12 days</label></span>
+	                                    </div>
+	                                    
+	                                    <fieldset class="formStandardTime">
+	                                        <div class="formSelectWrap">
+	                                            <label for="t01">Time:</label>
+	                                            <select id="t01" class="formSelect">
+	                                                <option>hh</option>
+	                                                <option>00</option>
+	                                                <option>01</option>
+	                                                <option>02</option>
+	                                                <option>03</option>
+	                                            </select>
+	                                        </div>
+	                                        <div class="formSelectWrap">
+	                                            <label for="t02">Time:</label>
+	                                            <select id="t02" class="formSelect">
+	                                                <option>mm</option>
+	                                                <option>00</option>
+	                                                <option>01</option>
+	                                                <option>02</option>
+	                                                <option>03</option>
+	                                            </select>
+	                                        </div>
+	                                        <div class="formSelectWrap">
+	                                            <label for="t03">Time:</label>
+	                                            <select id="t03" class="formSelect">
+	                                                <option>ss</option>
+	                                                <option>00</option>
+	                                                <option>01</option>
+	                                                <option>02</option>
+	                                                <option>03</option>
+	                                            </select>
+	                                        </div>
+	                                    </fieldset>
+	                                    
+	                                </div>
+	                            </fieldset>
+	                            
+	                            <fieldset class="formStandard">
+	                                <div class="formSubmitWrap">
+	                                    <input type="submit" value="Save" class="formSubmit" />
+	                                </div>
+	                                <div class="formSubmitWrap">
+	                                    <input type="submit" value="Reorder tape" class="formSubmit" />
+	                                </div>
+	                            </fieldset>
+	                        </form>
+	            					            				
+	            				
+
+            			
+            			</div>
+            			
+            			
+            			
+            			
+            		</section>
+            		
+            		
+            		
+            	</div>
+            	
+            </section>
+            
+        </div>
+        
+    </body>
+</html>

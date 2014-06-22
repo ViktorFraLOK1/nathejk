@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SBS SWAT Search</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="../page.js"></script>
+        
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../page.css"> 
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+        
+    </head>
+    
+    <body>
+        <div id="mainContainer">
+            <header class="siteHeader">
+            
+                <hgroup>
+                    <h1 class="logo">SBS</h1>
+                </hgroup>
+                
+                <nav class="primary">
+                    <ul>
+                        <li class="home icon16x16home"><a href="index.html">Home</a></li>
+                        <li class="search icon16x16search active"><a href="http://dr.dk">Search</a></li>
+                        <li class="inbox"><a href="inbox.html">Inbox <span title="6 new items">6</span></a></li>
+                        <li class="clipboard"><a href="http://twitter.com">Clipboard <span title="24 items">24</span></a></li>
+                        <li class="todo"><a href="#">To-Do <span title="13 items">13</span></a></li>
+                        <li class="savedsearches">
+                            <div class="formSelectWrap">
+                                <select class="formSelect">
+                                    <option>Saved Searches</option>
+                                    <option>--------------</option>
+                                    <option value="1">My Search 01</option>
+                                    <option value="2">Monday Morning Search</option>
+                                    <option value="3">Grey's Anatomy search</option>
+                                    <option value="4">Missing Scripts, Universal</option>
+                                    <option value="5">Warner Bros. MCS</option>
+                                    <option value="6">Some search</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <nav class="userOptions">
+                    <ul>
+                        <li><a href="#">Log out</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="contentContainer">
+                <form action="#" method="post" class="searchModules">
+                    
+                    
+                    <!--
+                    
+                    Dev note:
+                        If a search field is used in one of the sections (except the first one (basic)), add class="forceOpen" to the section-tag
+                                        
+                    -->
+                    
+                    
+                    <section class="mainSearchBasic">
+                        <h1>Basic search</h1>
+                        <fieldset>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title">Title</label>
+                                	<input type="text" class="formText" id="title" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype">Container type</label>
+                                	<select id="containerType" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country">Country</label>
+                                	<select id="country" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType">Delivery type</label>
+                                	<select id="deliveryType" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title1">Title</label>
+                                	<input type="text" class="formText" id="title1" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype">Container type</label>
+                                	<select id="containerType" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country1">Country</label>
+                                	<select id="country1" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType1">Delivery type</label>
+                                	<select id="deliveryType1" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title2">Title</label>
+                                	<input type="text" class="formText" id="title2" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype2">Container type</label>
+                                	<select id="containerType2" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country2">Country</label>
+                                	<select id="country2" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType2">Delivery type</label>
+                                	<select id="deliveryType2" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title3">Title</label>
+                                	<input type="text" class="formText" id="title3" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype3">Container type</label>
+                                	<select id="containerType3" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country3">Country</label>
+                                	<select id="country3" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType3">Delivery type</label>
+                                	<select id="deliveryType3" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="mainSearchMusic">
+                        <h1>Music Cue search</h1>
+                        <fieldset>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title4">Title</label>
+                                	<input type="text" class="formText" id="title4" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype4">Container type</label>
+                                	<select id="containerType4" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country4">Country</label>
+                                	<select id="country4" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType4">Delivery type</label>
+                                	<select id="deliveryType4" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title5">Title</label>
+                                	<input type="text" class="formText" id="title5" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype5">Container type</label>
+                                	<select id="containerType5" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country5">Country</label>
+                                	<select id="country5" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType5">Delivery type</label>
+                                	<select id="deliveryType5" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formCheckboxWrap">
+                                	<input type="checkbox" id="something01" class="formCheckbox" />
+                                	<label for="something01">Here is a checkbox</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="mainSearchScript">
+                        <h1>Script search</h1>
+                        <fieldset>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title9">Title</label>
+                                	<input type="text" class="formText" id="title9" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype9">Container type</label>
+                                	<select id="containerType9" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country9">Country</label>
+                                	<select id="country9" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType9">Delivery type</label>
+                                	<select id="deliveryType9" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formTextWrap">
+                                	<label for="title9">Title</label>
+                                	<input type="text" class="formText" id="title9" />
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="containertype9">Container type</label>
+                                	<select id="containerType9" class="formSelect">
+                                		<option>Agent Group 10</option>
+                                		<option>Agent Group 20</option>
+                                		<option>Agent Group 30</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="country9">Country</label>
+                                	<select id="country9" class="formSelect">
+                                		<option>Denmark</option>
+                                		<option>Germany</option>
+                                		<option>England</option>
+                                	</select>
+                                </div>
+                                <div class="formSelectWrap">
+                                	<label for="deliveryType9">Delivery type</label>
+                                	<select id="deliveryType9" class="formSelect">
+                                		<option>Value</option>
+                                		<option>Something</option>
+                                		<option>Skipperlabskovs</option>
+                                	</select>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="formCheckboxWrap">
+                                	<input type="checkbox" id="something09" class="formCheckbox" />
+                                	<label for="something09">Here is a checkbox</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <section class="searchModulesActions">
+                        <fieldset>
+                            <div class="formSubmitWrap">
+                            	<input type="submit" value="Save and search" class="formSubmit" />
+                            </div>
+                            <div class="formSubmitWrap">
+                            	<input type="submit" value="Search" class="formSubmit" />
+                            </div>
+                        </fieldset>
+                    </section>
+                </form>
+                
+                <!-- 
+                
+                end search - begin results
+                
+                -->
+                
+                <div id="searchResults" class="singleColumn">
+                    
+                    <form action="http://kimblim.dk" method="get">
+                        
+                        <div class="column">
+                            <header>
+                                <div class="formSelectWrap">
+                                    <select class="formSelect doSubmit">
+                                        <option>Columns:</option>
+                                        <option>------------</option>
+                                        <option value="morfar">Music Cue View</option>
+                                        <option value="skipperlabskovs">Script View</option>
+                                        <option value="hephey">TX Date View</option>
+                                    </select>
+                                </div>
+                                <h1>Search result</h1>
+                                <div class="formTools">
+                                	<ul>
+                                		<li><input type="submit" value="Refresh" class="refresh" /></li>
+                                		<li><a href="savesearch.html?skipper=labskovs" class="fancybox800x600 saveSearch icon16x16save">Save Search</a></li>
+                                	</ul>
+                                	
+                                </div>
+                            </header>
+                            <div class="wrap">
+                                <table cellspacing="0" border="0" class="toolTable">
+                                    <thead>
+                                        <tr>
+                                            <th class="formCheckboxWrap"></th>
+                                            <th class="title">Title</th>
+                                            <th class="type">Type</th>
+                                            <th class="linked">Link</th>
+                                            <th class="distributor">Distributor</th>
+                                            <th class="date">Date</th>
+                                            <th class="duration">Duration</th>
+                                            <th class="distId">Dist. ID</th>
+                                            <th class="sbsId">SBS ID</th>
+                                            <th class="script">Script</th>
+                                            <th class="mcs">MCS</th>
+                                            <th class="tape">Tape</th>
+                                            <th class="date">Date 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 
+                                        
+                                        dev note:
+                                        if the checkbox is marked, the class "active" must be added to the <tr>
+                                        
+                                         -->
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" name="skipper" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">aWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/01/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/01/2001</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">bShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/02/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/02/2001</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">cSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/03/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/03/2001</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">dWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/04/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/04/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">eShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/05/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/05/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">fSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">23/06/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">23/06/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">gWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">04/07/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">04/07/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">hShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">05/08/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">05/08/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">iSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">22/09/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">22/09/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">jWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">12/07/2002</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">12/07/2002</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">kShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">09/06/2000</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">09/06/2000</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">lSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">04/06/2004</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">04/06/2004</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">mWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">03/06/2007</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">03/06/2007</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">nShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/12/2010</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/12/2010</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">oSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">05/06/2009</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">05/06/2009</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">pWith You I'm born again <span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">02/09/2002</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">02/09/2002</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">qShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/01/2003</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/01/2003</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">rSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/01/2001</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/01/2001</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c01" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">sWith You I'm born again and this one has an extremely looooooong title<span>(127/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">01/09/2009</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">01/09/2009</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c02" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">tShock to the system <span>(128/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mc">MC</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">05/11/2009</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">05/11/2009</td><!-- which date?? -->
+                                        </tr>
+                                        <tr>
+                                            <td class="formCheckboxWrap">
+                                                <input type="checkbox" class="formCheckbox" id="c03" />
+                                            </td>
+                                            <td class="title">
+                                                <a href="#">uSuperfreak <span>(129/16@Grey's Anatomy-VII)</span></a>
+                                            </td>
+                                            <td class="type">
+                                                <span class="mp">MP</span>
+                                            </td>
+                                            <td class="linked"><span class="icon16x16link" title="Linked with something and something else">Linked with something and something else</span></td>
+                                            <td class="distributor">Warner Bros.</td>
+                                            <td class="date">30/12/2005</td><!-- which date?? -->
+                                            <td class="duration">01:56:03</td>
+                                            <td class="distId">
+                                                <span>701</span>
+                                            </td>
+                                            <td class="sbsId">127</td>
+                                            <td class="script">
+                                                <span class="icon16x16requested">Requested</span>
+                                            </td>
+                                            <td class="mcs">
+                                                <span class="icon16x16delivered">Delivered</span>
+                                            </td>
+                                            <td class="tape">
+                                                <span class="icon16x16ordered">Ordered</span>
+                                            </td>
+                                            <td class="date">30/12/2005</td><!-- which date?? -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                                                            
+                        <nav class="toolTableTools">
+                        <ul>
+                            <li><a href="link.html?morfar=true" class="confirm icon16x16link">link</a></li>
+                            <li><a href="unlink.html" class="confirm icon16x16unlink">unlink</a></li>
+                            <li><a href="http://peytz.dk" class="submitForm icon16x16edit">edit</a></li>
+                            <li><a href="combine.html" class="confirm icon16x16combine">combine</a></li>
+                            <li><a href="delete.html" class="confirm icon16x16delete">delete</a></li>
+                            <li><a href="merge.html" class="confirm icon16x16merge">merge</a></li>
+                            <li><a href="#" class="confirm icon16x16search2">search</a></li>
+                            <li><a href="thumbsup.html" class="confirm icon16x16thumbsup">handled</a></li>
+                        </ul>
+                    </nav>
+                    	        
+                    <footer>
+                        <input type="submit" value="Add pane" />
+                    </footer>
+                            
+                    </form>
+                     
+                    
+                    
+                </div><!-- end #searchResults -->
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

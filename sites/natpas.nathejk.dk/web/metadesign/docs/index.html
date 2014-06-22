@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>SBS SWAT</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="../page.js"></script>
+        
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="../page.css"> 
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+    </head>
+    
+    <body>
+        <div id="mainContainer">
+            <header class="siteHeader">
+            
+                <hgroup>
+                    <h1 class="logo">SBS</h1>
+                </hgroup>
+                
+                <nav class="primary">
+                    <ul>
+                        <li class="home icon16x16home"><a href="index.html">Home</a></li>
+                        <li class="search icon16x16search"><a href="http://dr.dk">Search</a></li>
+                        <li class="inbox"><a href="inbox.html">Inbox <span title="6 new items">6</span></a></li>
+                        <li class="clipboard"><a href="http://twitter.com">Clipboard <span title="24 items">24</span></a></li>
+                        <li class="todo"><a href="#">To-Do <span title="13 items">13</span></a></li>
+                        <li class="savedsearches">
+                            <div class="formSelectWrap">
+                                <select class="formSelect">
+                                    <option>Saved Searches</option>
+                                    <option>--------------</option>
+                                    <option value="1">My Search 01</option>
+                                    <option value="2">Monday Morning Search</option>
+                                    <option value="3">Grey's Anatomy search</option>
+                                    <option value="4">Missing Scripts, Universal</option>
+                                    <option value="5">Warner Bros. MCS</option>
+                                    <option value="6">Some search</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <nav class="userOptions">
+                    <ul>
+                        <li><a href="#">Log out</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="contentContainer">
+                
+                <h1>Sideoversigt</h1>
+                <ul>
+                    <li><a href="index.html">Forside (default søgning)</a></li>
+                    <li><a href="searchresult_single.html">Søgeresultat m. enkelt pane</a></li>
+                    <li><a href="searchresult_dual_result.html">Søgeresultat m. to panes, hvor begge er søgeresultat</a></li>
+                    <li><a href="searchresult_dual_search.html">Søgeresultat m. to panes, hvoraf en er ny search</a></li>
+                    <li><a href="searchresult_dual_search.html">Søgeresultat m. to panes, hvoraf begge er ny search</a></li>
+                    <li><a href="inbox.html">Inbox m. enkelt pane</a></li>
+                    <li><a href="inbox_dual_result.html">Inbox m. to panes, hvoraf en er søgeresultat</a></li>
+                    <li><a href="inbox_dual_search.html">Inbox m. to panes, hvoraf en er ny search</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="lostpass.html">Glemt password</a></li>
+                    <li><a href="mastercontainer.html">Master Product Container</a></li>
+                    <li><a href="materialcontainer.html">Material Container</a></li>
+                    <li><a href="savedsearches.html">Gemte søgninger</a></li>
+                    <li><a href="lightboxform.html" class="fancybox600x480">Form i lightbox</a></li>
+                    <li><a href="upload_01.html" class="fancybox800x600">Upload Script</a></li>
+                    <li><a href="upload_02.html" class="fancybox800x600">Upload Music Cue Sheet</a></li>
+                    <li><a href="batchedit.html" class="fancyboxFullxFull">Batch edit</a></li>
+                    <li><a href="bulkedit.html" class="fancyboxFullxFull">Bulk Edit</a></li>
+                    <li><a href="link.html" class="confirm">Link products</a></li>
+                    <li><a href="unlink.html" class="confirm">Unlink products</a></li>
+                    <li><a href="merge.html" class="confirm">Merge products</a></li>
+                    <li><a href="combine.html" class="confirm">Combine products</a></li>
+                    <li><a href="delete.html" class="confirm">Delete products</a></li>
+                    <li><a href="thumbsup.html" class="confirm">Thumbsup (whatever den action skal hedde?) products</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div id="keyboardHelp">
+        	<h1>Keyboard Shortcuts</h1>
+        	<table summary="keyboard shortcuts overview" border="0" cellspacing="0">
+        		<tbody>
+        			<tr>
+        				<th colspan="2">Global shortcuts</th>
+        			</tr>
+        			<tr>
+        				<td colspan="2">Navigation</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+1</th>
+        				<td>Home</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+2</th>
+        				<td>Search</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+3</th>
+        				<td>Inbox</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+4</th>
+        				<td>Clipboard</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+5</th>
+        				<td>To-Do</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+6</th>
+        				<td>Saved Searches</td>
+        			</tr>
+        			<tr>
+        				<td colspan="2">Miscellanous</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+f</th>
+        				<td>Jump to first form field on page</td>
+        			</tr>
+        			<tr>
+        				<th colspan="2">Pane functionality</th>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+q</th>
+        				<td>Go to first item/form field in left pane</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+w</th>
+        				<td>Go to first item/form field in right pane</td>
+        			</tr>
+        			<tr>
+        				<th colspan="2">List functionality</th>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+k</th>
+        				<td>Move to next item</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+j</th>
+        				<td>Move to previous item</td>
+        			</tr>
+        			<tr>
+        				<td colspan="2">Product lists</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+x</th>
+        				<td>Select current item</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+o</th>
+        				<td>Open current item</td>
+        			</tr>
+        			<tr>
+        				<td colspan="2">Saved searches lists</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+r</th>
+        				<td>Rename current item</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+e</th>
+        				<td>Edit current item</td>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+d</th>
+        				<td>Delete current item</td>
+        			</tr>
+        			<tr>
+        				<th colspan="2">Product pages</th>
+        			</tr>
+        			<tr>
+        				<th scope="row">ctrl+shift+m</th>
+        				<td>Show/hide list</td>
+        			</tr>
+        			
+        			
+        			
+        			
+        			
+        		</tbody>
+        	</table>
+        </div>
+        
+    </body>
+</html>

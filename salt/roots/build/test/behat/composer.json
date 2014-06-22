@@ -1,0 +1,33 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sourceforge/sahi",
+                "version": "44",
+                "dist": {
+                    "url": "http://downloads.sourceforge.net/project/sahi/sahi-v44/sahi_20130429.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/dbunit": ">=1.2",
+        "phpunit/phpunit-mock-objects": ">=1.2",
+
+    	"behat/behat": "3.0.*@stable",
+    	"behat/mink": "1.5@stable",
+        "behat/mink-extension": "*",
+    	"behat/mink-selenium2-driver": "*",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-sahi-driver": "*",
+
+        "sourceforge/sahi": "*"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "/usr/local/bin/"
+    }
+}

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> Know your current location </title>
+<script type="text/javascript">
+  navigator.geolocation.getCurrentPosition(getLocation, unknownLocation);
+ 
+  function getLocation(pos)
+  {
+    var latitde = pos.coords.latitude;
+    var longitude = pos.coords.longitude;
+    alert('Your current coordinates (latitide,longitude) are : ' + latitde + ', ' + longitude);
+  }
+  function unknownLocation()
+  {
+    alert('Could not find location');
+  }
+</head>
+</script>
+</html>

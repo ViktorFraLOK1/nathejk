@@ -1,0 +1,21 @@
+{
+  "name": "tilmelding.nathejk.dk",
+  "version": "0.0.0",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~2.3.2",
+    "bootstrap-datepicker": "1.2.0",
+    "jquery-validation": "~1.12"
+  }
+}

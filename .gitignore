@@ -1,0 +1,4 @@
+.vagrant/
+sites/dev.nathejk.dk/web/vendor
+sites/natpas.nathejk.dk/web/vendor
+sites/tilmelding.nathejk.dk/web/vendor
