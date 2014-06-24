@@ -22,17 +22,17 @@ nathejk-db:
 /var/www/dev.nathejk.dk:
   file.symlink:
     - target: /vagrant/sites/dev.nathejk.dk/web
-    - require:
-        - sls: webserver
+  require:
+    - sls: webserver
 
 /var/www/natpas.dev.nathejk.dk:
   file.symlink:
     - target: /vagrant/sites/natpas.nathejk.dk/web
-    - require:
-        - sls: webserver
+  require:
+    - sls: webserver
 
 /var/www/tilmelding.dev.nathejk.dk:
   file.symlink:
     - target: /vagrant/sites/tilmelding.nathejk.dk/web
-    - require:
-        - sls: webserver
+  require:
+    - sls: webserver
