@@ -46,7 +46,7 @@
       </div>
       <div class="row">
         <div class="span6">
-        <div class="hero-unit alert alert-info" style="min-height:320px;">
+        <div class="hero-unit alert alert-info" style="min-height:530px;">
             {if !$agenda->signupSpejderOpen}<span class="label label-warning pull-right">Tilmeldingen er lukket</span>{/if}
           <h1>Spejdere <small>12-17 år</small></h1>
           <div id="spejder-step" class="stepManager show-step1">
@@ -76,7 +76,7 @@
         </div>
 
         <div class="span6">
-        <div class="hero-unit alert alert-error" style="min-height:320px;">
+        <div class="hero-unit alert alert-error" style="min-height:530px;">
             {if !$agenda->signupSeniorOpen}<span class="label label-warning pull-right">Tilmeldingen er lukket</span>{/if}
           <h1>Seniorer <small>+15 år</small></h1>
           <div id="senior-step" class="stepManager show-step1">
