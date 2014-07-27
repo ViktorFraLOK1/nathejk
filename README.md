@@ -4,7 +4,7 @@ Development setup
 First time use
 --------------
 Install VirtualBox <https://www.virtualbox.org/wiki/Downloads> and Vagrant <http://downloads.vagrantup.com/>. First time 
-you launch the image the environment (webserver etc) will be installed, this will take a while.
+you launch the image the environment (webserver etc) will be installed, this will take a while (~20 minuttes).
 
 Everyday use
 ------------
