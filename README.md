@@ -6,6 +6,11 @@ First time use
 Install VirtualBox <https://www.virtualbox.org/wiki/Downloads> and Vagrant <http://downloads.vagrantup.com/>. First time 
 you launch the image the environment (webserver etc) will be installed, this will take a while (~20 minuttes).
 
+<TEST!>
+Det var da den mindst forklarende brugervejledning jeg nogensinde har læst:p
+</TEST!>
+
+
 Everyday use
 ------------
 Open a console, change to the base directory (the directory where this file is located) and type ``vagrant up`` this 
